@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu principal" />
+          <Menu mnemonicParsing="false" text="Modificadores" />
+          <Menu mnemonicParsing="false" text="Naves" />
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" prefWidth="800.0" text="Personajes">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="90.0" prefWidth="760.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Tipo:" />
+                  <ComboBox prefHeight="25.0" prefWidth="200.0" />
+                  <ComboBox prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Nivel" />
+                  <TextField />
+                  <Label text="Estrellas" />
+                  <TextField />
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="Lado luminoso." />
+                  <CheckBox mnemonicParsing="false" text="Lado Oscuro" />
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <CheckBox contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="18.0" prefWidth="170.0" text="Todos los personajes">
+               <HBox.margin>
+                  <Insets left="30.0" top="39.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="340.0" prefWidth="200.0">
+         <children>
+            <TableView maxWidth="600.0" minWidth="-Infinity" prefHeight="330.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn prefWidth="110.0" text="Nombre" />
+                  <TableColumn prefWidth="110.0" text="Bando" />
+                  <TableColumn prefWidth="110.0" text="Tipo" />
+                  <TableColumn prefWidth="110.0" text="Rol" />
+                  <TableColumn text="Estrellas" />
+                  <TableColumn text="Nivel" />
+               </columns>
+            </TableView>
+            <VBox alignment="CENTER" prefHeight="350.0" prefWidth="180.0" spacing="40.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Ver detalles" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Editar modificadores" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Entrenar" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="760.0">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" text="Menu Principal" />
+            <Button mnemonicParsing="false" prefWidth="96.0" text="Salir">
+               <HBox.margin>
+                  <Insets left="568.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

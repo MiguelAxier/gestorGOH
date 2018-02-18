@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu principal" />
+          <Menu mnemonicParsing="false" text="Personajes" />
+          <Menu mnemonicParsing="false" text="Naves" />
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="800.0" text="Modificadores">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="55.0" prefWidth="760.0">
+         <children>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="162.0">
+               <children>
+                  <Label text="Estadistica principal" />
+                  <TextField />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="162.0">
+               <children>
+                  <Label text="Ranura" />
+                  <ComboBox prefWidth="160.0" />
+               </children>
+               <HBox.margin>
+                  <Insets left="18.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="162.0">
+               <children>
+                  <Label text="Modelo" />
+                  <ComboBox prefWidth="160.0" />
+               </children>
+               <HBox.margin>
+                  <Insets left="18.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="122.0">
+               <children>
+                  <Label text="Nivel" />
+                  <TextField />
+               </children>
+               <HBox.margin>
+                  <Insets left="18.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="80.0" prefWidth="90.0" spacing="10.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="Equipados" />
+                  <CheckBox mnemonicParsing="false" text="Sin equipar" />
+               </children>
+               <HBox.margin>
+                  <Insets left="18.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="350.0" prefWidth="760.0">
+         <children>
+            <TableView prefHeight="330.0" prefWidth="600.0">
+              <columns>
+                <TableColumn prefWidth="140.0" text="Ranura" />
+                <TableColumn prefWidth="140.0" text="Est. Principal" />
+                  <TableColumn prefWidth="140.0" text="Personaje" />
+                  <TableColumn prefWidth="90.0" text="Modelo" />
+                  <TableColumn prefWidth="90.0" text="Nivel" />
+              </columns>
+            </TableView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="160.0" spacing="40.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Equipar" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Vender" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="60.0" prefWidth="760.0">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" text="Menu principal" />
+            <Button mnemonicParsing="false" prefWidth="96.0" text="Salir">
+               <HBox.margin>
+                  <Insets left="568.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
